@@ -24,3 +24,37 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-07-08 22:47:52.043
 !MESSAGE Failed to load properties file for project 'Java2_July'
+!SESSION 2013-07-10 20:22:36.353 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.7.0_04-ea
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.ide.eclipse.adt.package.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-07-10 20:29:31.368
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2013-07-10 20:29:45.686
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-07-10 21:42:12.055
+!MESSAGE listview_item.xml: Couldn't resolve resource @string/teamMemberslabel
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-07-10 21:42:12.096
+!MESSAGE listview_item.xml: Couldn't resolve resource @string/Namelabel
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-07-10 21:42:12.101
+!MESSAGE listview_item.xml: Couldn't resolve resource @string/Emaillabel
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-07-10 21:46:01.656
+!MESSAGE singleitemview.xml: Couldn't resolve resource @string/teamMemberslabel
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-07-10 21:46:01.687
+!MESSAGE singleitemview.xml: Couldn't resolve resource @string/Namelabel
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-07-10 21:46:01.689
+!MESSAGE singleitemview.xml: Couldn't resolve resource @string/Emaillabel
+
+!ENTRY org.eclipse.ui 4 4 2013-07-10 22:16:36.491
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.

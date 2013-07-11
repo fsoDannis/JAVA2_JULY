@@ -1,0 +1,104 @@
+//Dan Annis
+//July 2013
+
+
+
+package com.dannis.java2_july;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import android.app.ProgressDialog;
+import android.os.AsyncTask;
+import android.util.Log;
+import android.widget.ListView;
+
+public class MainActivity extends Activity {
+    // Declare Variables
+    ListView listview;
+    ListViewAdapter adapter;
+    ProgressDialog mProgressDialog;
+    ArrayList<HashMap<String, String>> arraylist;
+    static String TITLE = "title";
+    static String DESC = "description";
+    static String THUMB = "thumbnail";
+ 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Get the view from listview_main.xml
+        setContentView(R.layout.listview_main);
+        // Execute DownloadJSON AsyncTask
+        new DownloadJSON().execute();
+    }
+ 
+    // DownloadJSON AsyncTask
+    private class DownloadJSON extends AsyncTask<Void, Void, Void> {
+ 
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // Create a progressdialog
+            mProgressDialog = new ProgressDialog(MainActivity.this);
+            // Set progressdialog title
+            mProgressDialog.setTitle("Android Parsing YQL in JSON Tutorial");
+            // Set progressdialog message
+            mProgressDialog.setMessage("Loading...");
+            mProgressDialog.setIndeterminate(false);
+            // Show progressdialog
+            mProgressDialog.show();
+        }
+ 
+        @Override
+        protected Void doInBackground(Void... params) {
+            // Create the array
+            arraylist = new ArrayList<HashMap<String, String>>();
+            // YQL JSON URL
+            String url = "http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20google.books%20WHERE%20q%3D%22android%22%20AND%20maxResults%3D5%20AND%20startIndex%3D1&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+ 
+            try {
+                // Retrive JSON Objects from the given URL in JSONfunctions.class
+                JSONObject json_data = JSONfunctions.getJSONfromURL(url);
+                JSONObject json_query = json_data.getJSONObject("query");
+                JSONObject json_results = json_query.getJSONObject("results");
+                JSONObject json_json_result = json_results
+                        .getJSONObject("json");
+                JSONArray json_result = json_json_result.getJSONArray("items");
+ 
+                for (int i = 0; i < json_result.length(); i++) {
+                    HashMap<String, String> map = new HashMap<String, String>();
+                    JSONObject c = json_result.getJSONObject(i);
+                    JSONObject vo = c.getJSONObject("volumeInfo");
+                    map.put("title", vo.optString("title"));
+                    map.put("description", vo.optString("description"));
+                    JSONObject il = vo.getJSONObject("imageLinks");
+                    map.put("thumbnail", il.optString("thumbnail"));
+                    arraylist.add(map);
+                }
+ 
+            } catch (JSONException e) {
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+            return null;
+        }
+ 
+        @Override
+        protected void onPostExecute(Void args) {
+            // Locate the listview in listview_main.xml
+            listview = (ListView) findViewById(R.id.listview);
+            // Pass the results into ListViewAdapter.java
+            adapter = new ListViewAdapter(MainActivity.this, arraylist);
+            // Binds the Adapter to the ListView
+            listview.setAdapter(adapter);
+            // Close the progressdialog
+            mProgressDialog.dismiss();
+        }
+    }
+}
