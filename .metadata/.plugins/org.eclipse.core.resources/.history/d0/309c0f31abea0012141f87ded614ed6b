@@ -15,7 +15,7 @@ import android.util.Log;
 public class LastFMHelper {
 
 	private static final String LastFMMetroTrackChartUrl = 
-		"http://ws.audioscrobbler.com/2.0/?method=geo.getmetrotrackchart&country=united+states&format=json&api_key=74242ec5d1d401bec3c33fe249c3a613"; 
+		"http://ws.audioscrobbler.com/2.0/?method=geo.getmetrotrackchart&country=united+states&format=json&api_key=495635bdb0f5e1dd9f86c26e40c71829"; 
 	private static final int HTTP_STATUS_OK = 200;
 	private static byte[] buff = new byte[1024];
 	private static final String logTag = "LastFMHelper";
