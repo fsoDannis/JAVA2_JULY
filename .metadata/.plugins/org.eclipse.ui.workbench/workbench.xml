@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="9" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="21" y="56">
+<window height="768" width="1419" x="21" y="56">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="250"/>
@@ -18,12 +18,13 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="98" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="178" y="22"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="242" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -37,32 +38,83 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="/Users/Dannis/Documents/JAVA2_JULY/Java2_July/res/layout/activity_main.xml" title="activity_main.xml" tooltip="Java2_July/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java2_July/res/layout/activity_main.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LastFMHelper.java" partName="LastFMHelper.java" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/src/com/dannis/toptrackapp/LastFMHelper.java" title="LastFMHelper.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/LastFMHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMHelper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="77" selectionOffset="490" selectionTopPixel="855"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="/Users/Dannis/Documents/JAVA2_JULY/Java2_July/src/com/dannis/java2_july/MainActivity.java" title="MainActivity.java" tooltip="Java2_July/src/com/dannis/java2_july/MainActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java2_July/src/com/dannis/java2_july/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="24" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LastFMWebAPITask.java" partName="LastFMWebAPITask.java" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/src/com/dannis/toptrackapp/LastFMWebAPITask.java" title="LastFMWebAPITask.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/LastFMWebAPITask.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMWebAPITask.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="372" selectionTopPixel="1065"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TrackData.java" partName="TrackData.java" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/src/com/dannis/toptrackapp/TrackData.java" title="TrackData.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/TrackData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/src/com/dannis/toptrackapp/TrackData.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="399" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TopTrackListActivity.java" partName="TopTrackListActivity.java" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/src/com/dannis/toptrackapp/TopTrackListActivity.java" title="TopTrackListActivity.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/TopTrackListActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/src/com/dannis/toptrackapp/TopTrackListActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3447" selectionTopPixel="964"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" partName="main.xml" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/res/layout/main.xml" title="main.xml" tooltip="TopTrackApp/res/layout/main.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/res/layout/main.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TrackDataAdapter.java" partName="TrackDataAdapter.java" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/src/com/dannis/toptrackapp/TrackDataAdapter.java" title="TrackDataAdapter.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/TrackDataAdapter.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/src/com/dannis/toptrackapp/TrackDataAdapter.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2858" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LastFMIconTask.java" partName="LastFMIconTask.java" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/src/com/dannis/toptrackapp/LastFMIconTask.java" title="LastFMIconTask.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/LastFMIconTask.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMIconTask.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="437" selectionTopPixel="650"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="trackrow.xml" partName="trackrow.xml" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/res/layout/trackrow.xml" title="trackrow.xml" tooltip="TopTrackApp/res/layout/trackrow.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/res/layout/trackrow.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="colors.xml" partName="colors.xml" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/res/values/colors.xml" title="colors.xml" tooltip="TopTrackApp/res/values/colors.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/res/values/colors.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" partName="strings.xml" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/res/values/strings.xml" title="strings.xml" tooltip="TopTrackApp/res/values/strings.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/res/values/strings.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="TopTrackApp Manifest" path="/Users/Dannis/Documents/JAVA2_JULY/TopTrackApp/AndroidManifest.xml" title="TopTrackApp Manifest" tooltip="TopTrackApp/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopTrackApp/AndroidManifest.xml"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
 <view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices"/>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
 <view id="com.android.ide.eclipse.ddms.views.ThreadView" partName="Threads"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 <view id="com.android.ide.eclipse.ddms.views.HeapView" partName="Heap"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
 <view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer"/>
 <view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (2 items)"/>
+<category IMemento.internal.id="Errors (5 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -107,7 +159,7 @@
 <view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.views.ProgressView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
 <descriptor class="com.android.ide.eclipse.ddms.Perspective" id="com.android.ide.eclipse.ddms.Perspective" label="DDMS"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -194,6 +246,7 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <show_view_action id="org.eclipse.jdt.ui.SourceView"/>
@@ -237,6 +290,9 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -263,19 +319,24 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.ProgressView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
@@ -296,12 +357,146 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Java2_July/res/layout/activity_main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Java2_July/src/com/dannis/java2_july/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMHelper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMWebAPITask.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TopTrackApp/src/com/dannis/toptrackapp/TrackData.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TopTrackApp/src/com/dannis/toptrackapp/TopTrackListActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TopTrackApp/res/layout/activity_top_track_list.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TopTrackApp/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/TopTrackApp/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TopTrackApp/src/com/dannis/toptrackapp/TrackDataAdapter.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMIconTask.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TopTrackApp/res/layout/trackrow.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TopTrackApp/res/values/colors.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TopTrackApp/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/TopTrackApp/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TopTrackApp/res/menu/activity_top_track_list.xml"/>
 </editors>
-<item historyLabel="activity_main.xml" index="0"/>
-<item active="true" historyLabel="MainActivity.java" index="1">
-<position info="not_deleted" x="27" y="0"/>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position info="not_deleted" x="2945" y="0"/>
+</item>
+<item historyLabel="TrackData.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TrackData.java" index="2">
+<position info="not_deleted" x="454" y="0"/>
+</item>
+<item historyLabel="TrackData.java" index="2">
+<position/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position info="not_deleted" x="2945" y="0"/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position/>
+</item>
+<item historyLabel="activity_top_track_list.xml" index="4"/>
+<item historyLabel="main.xml" index="5"/>
+<item historyLabel="activity_top_track_list.xml" index="4"/>
+<item historyLabel="main.xml" index="5">
+<position/>
+</item>
+<item historyLabel="main.xml" index="6">
+<position/>
+</item>
+<item historyLabel="main.xml" index="6">
+<position/>
+</item>
+<item historyLabel="main.xml" index="6">
+<position/>
+</item>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position info="not_deleted" x="3447" y="0"/>
+</item>
+<item historyLabel="TrackDataAdapter.java" index="7">
+<position info="not_deleted" x="742" y="0"/>
+</item>
+<item historyLabel="TrackData.java" index="2">
+<position info="not_deleted" x="513" y="0"/>
+</item>
+<item historyLabel="LastFMHelper.java" index="0">
+<position info="not_deleted" x="376" y="0"/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position info="not_deleted" x="372" y="0"/>
+</item>
+<item historyLabel="LastFMIconTask.java" index="8">
+<position info="not_deleted" x="437" y="0"/>
+</item>
+<item historyLabel="TrackDataAdapter.java" index="7">
+<position info="not_deleted" x="742" y="0"/>
+</item>
+<item historyLabel="TrackData.java" index="2">
+<position info="not_deleted" x="513" y="0"/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position info="not_deleted" x="372" y="0"/>
+</item>
+<item historyLabel="LastFMHelper.java" index="0">
+<position info="not_deleted" x="376" y="0"/>
+</item>
+<item historyLabel="main.xml" index="5"/>
+<item historyLabel="trackrow.xml" index="9"/>
+<item historyLabel="TopTrackListActivity.java" index="3">
+<position info="not_deleted" x="3447" y="0"/>
+</item>
+<item historyLabel="LastFMHelper.java" index="0">
+<position info="not_deleted" x="490" y="77"/>
+</item>
+<item historyLabel="LastFMWebAPITask.java" index="1">
+<position info="not_deleted" x="372" y="0"/>
+</item>
+<item historyLabel="TrackData.java" index="2">
+<position info="not_deleted" x="399" y="0"/>
+</item>
+<item historyLabel="trackrow.xml" index="9"/>
+<item historyLabel="colors.xml" index="10"/>
+<item historyLabel="strings.xml" index="11"/>
+<item historyLabel="main.xml" index="5"/>
+<item historyLabel="trackrow.xml" index="9"/>
+<item historyLabel="TopTrackApp Manifest" index="12"/>
+<item historyLabel="activity_top_track_list.xml" index="13"/>
+<item active="true" historyLabel="TrackDataAdapter.java" index="7">
+<position info="not_deleted" x="742" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -309,6 +504,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -317,15 +518,55 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.HeapStatus"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="Java2_July/src/com/dannis/java2_july/MainActivity.java">
-<persistable path="/Java2_July/src/com/dannis/java2_july/MainActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="ic_launcher.png" tooltip="TopTrackApp/res/drawable-hdpi/ic_launcher.png">
+<persistable path="/TopTrackApp/res/drawable-hdpi/ic_launcher.png"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="Java2_July/res/layout/activity_main.xml">
-<persistable path="/Java2_July/res/layout/activity_main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_top_track_list.xml" tooltip="TopTrackApp/res/menu/activity_top_track_list.xml">
+<persistable path="/TopTrackApp/res/menu/activity_top_track_list.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TopTrackApp/AndroidManifest.xml">
+<persistable path="/TopTrackApp/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="TopTrackApp/res/values/strings.xml">
+<persistable path="/TopTrackApp/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="colors.xml" tooltip="TopTrackApp/res/values/colors.xml">
+<persistable path="/TopTrackApp/res/values/colors.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="trackrow.xml" tooltip="TopTrackApp/res/layout/trackrow.xml">
+<persistable path="/TopTrackApp/res/layout/trackrow.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LastFMIconTask.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/LastFMIconTask.java">
+<persistable path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMIconTask.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TrackDataAdapter.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/TrackDataAdapter.java">
+<persistable path="/TopTrackApp/src/com/dannis/toptrackapp/TrackDataAdapter.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" tooltip="TopTrackApp/res/layout/main.xml">
+<persistable path="/TopTrackApp/res/layout/main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_top_track_list.xml" tooltip="TopTrackApp/res/layout/activity_top_track_list.xml">
+<persistable path="/TopTrackApp/res/layout/activity_top_track_list.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TopTrackListActivity.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/TopTrackListActivity.java">
+<persistable path="/TopTrackApp/src/com/dannis/toptrackapp/TopTrackListActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TrackData.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/TrackData.java">
+<persistable path="/TopTrackApp/src/com/dannis/toptrackapp/TrackData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LastFMWebAPITask.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/LastFMWebAPITask.java">
+<persistable path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMWebAPITask.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LastFMHelper.java" tooltip="TopTrackApp/src/com/dannis/toptrackapp/LastFMHelper.java">
+<persistable path="/TopTrackApp/src/com/dannis/toptrackapp/LastFMHelper.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="View.class" tooltip="android.view.View">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Java2_July/\/Applications\/android-sdk-macosx\/platforms\/android-17\/android.jar&lt;android.view(View.class"/>
 </file>
 </mruList>
 </workbench>
