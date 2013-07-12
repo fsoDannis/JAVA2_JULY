@@ -152,3 +152,6 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/corkReport2 2/
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-07-11 20:20:48.422
 !MESSAGE Failed to load properties file for project 'July_Project1'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-07-11 21:40:27.624
+!MESSAGE Failed to load properties file for project 'TopTrackApp'
