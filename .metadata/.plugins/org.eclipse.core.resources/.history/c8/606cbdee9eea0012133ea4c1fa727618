@@ -55,32 +55,12 @@ public class LastFMWebAPITask extends AsyncTask<String, Integer, String>
 			JSONObject respObj = new JSONObject(result);
 			JSONObject topTracksObj = respObj.getJSONObject("toptracks");
 			JSONArray tracks = topTracksObj.getJSONArray("track");
-			for(int i=0; i<tracks.length(); i++){
+			for(int i=0; i,tracks.length(); i++){
 				JSONObject track = tracks.getJSONObject(i);
-				String trackName = track.getString("name");
-				String trackUrl = track.getString("url");
-				JSONObject artistObj = track.getJSONObject("artist);
-				String artistName = track.getString("name");
-				String artistUrl = track.getString("url");
-				String imageUrl;
-				try {
-					JSONArray imageUrls = track.getJSONArray("image");
-					imageUrl = null;
-					for(int j=0; j<imageUrls.length(); j++){
-						JSONObject imageObj = imageUrls.getJSONObject(j);
-						imageUrl= imageObj.getString("#text");
-						if(imageObj.getString("size").equals("medium")){
-							break;
-						}
-					}
-				}catch (Exception e){
-					imageUrl = null;
-				}
-				trackdata.add(new TrackData(trackName,artistName,imageUrl,artistUrl,trackUrl));
+				String trackName = tracks.getString("name");
+				String trackUrl = tracks.getString("url");
 			}
-		}catch(JSONException e){
-			e.printStackTrace();
+			
 		}
-		this.activity.setTracks(trackdata);
 	}
 }
