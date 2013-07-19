@@ -1,5 +1,7 @@
 package com.dannis.toptrackapp;
 
+import com.dannis.toptrackapp.LastFMHelper.ApiException;
+
 import android.app.IntentService;
 import android.app.Service;
 import android.content.Intent;
@@ -29,17 +31,22 @@ public static  String metro = "";
 	     metro = extras.getString("metroName");
 	     
 	   
-	          synchronized (this) {
-	              try {
-	            	  String result = LastFMHelper.downloadFromServer(metro);
-	                   Intent broadCast = new Intent();
-	                   broadCast.putExtra("data", result);
-	            	   broadCast.setAction("toptrackaction");
-	            	   broadCast.addCategory(Intent.CATEGORY_DEFAULT);
-	            	   sendBroadcast(broadCast);
-	              } catch (Exception e) {
-	              }
-	          }
-	      }
+    	 String result = "";
+    	 try {
+    		 result = LastFMHelper.downloadFromServer(metro);
+    		 //Add to content provider
+    		 
+    	 } catch (ApiException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+    	 }
+	     
+    	 Intent broadCast = new Intent();
+	     broadCast.putExtra("data", result);
+	     broadCast.setAction(TopTrackServiceReciever.ACTION);
+	     //broadCast.addCategory(Intent.CATEGORY_DEFAULT);
+	     sendBroadcast(broadCast);
+	            
+	  }
 	  
 	}

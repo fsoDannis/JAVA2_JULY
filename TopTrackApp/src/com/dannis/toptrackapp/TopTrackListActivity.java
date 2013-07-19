@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,6 +35,7 @@ public class TopTrackListActivity extends Activity {
 	private Spinner metroSpinner;
     private InputMethodManager inMgr;
     private LastFMIconTask imgFetcher;
+    TopTrackServiceReciever myrec;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,10 +89,27 @@ public class TopTrackListActivity extends Activity {
         */	
     }
     
+    @Override
+    protected void onResume() {
+    	// TODO Auto-generated method stub
+    	
+    	super.onResume();
+    	IntentFilter filter = new IntentFilter(TopTrackServiceReciever.ACTION);
+    	myrec = new TopTrackServiceReciever();
+    	registerReceiver(myrec, filter);
+    }
+    
+    @Override
+    protected void onPause() {
+    	// TODO Auto-generated method stub
+    	super.onPause();
+    	unregisterReceiver(myrec);
+    }
+    
     private void startTopTrackService(String metroName)
     {
     	Intent serviceIntent = new Intent(this,TopTrackService.class);
-    	serviceIntent.putExtra("metro", metroName);
+    	serviceIntent.putExtra("metroName", metroName);
     	startService(serviceIntent);
     }
     

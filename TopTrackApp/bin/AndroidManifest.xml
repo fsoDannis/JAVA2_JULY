@@ -23,11 +23,15 @@
             android:exported="true" >
         </service>
 
-        <receiver
-            android:name="com.dannis.toptrackapp.TopTrackServiceReciever"
+        <receiver android:name="com.dannis.toptrackapp.TopTrackServiceReciever" >
+        </receiver>
+
+        <provider
+            android:name="com.dannis.toptrackapp.MyContentProvider"
+            android:authorities="com.dannis.toptrackapp.MyContentProvider"
             android:enabled="true"
             android:exported="true" >
-        </receiver>
+        </provider>
     </application>
 
     <uses-sdk android:minSdkVersion="4" />
