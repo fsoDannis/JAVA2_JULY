@@ -1,0 +1,95 @@
+package com.dannis.toptrackapp;
+
+import com.klusman.java2.DBAdapter;
+import com.klusman.java2.DatabaseHelper;
+
+import android.content.ContentProvider;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.UriMatcher;
+import android.database.Cursor;
+import android.database.MatrixCursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
+import android.util.Log;
+
+public class MyContentProvider extends ContentProvider {
+	public MyContentProvider() {
+	}
+	
+	private static final String AUTH = "com.dannis.toptrackapp.MyContentProvider";
+	private static final String PATH = "topTrackDB";
+	private static final String TAG = "topTrackContentProvider";
+	private static final String DATABASE_NAME = "topTrackDB";
+	static final String DATABASE_TABLE = "Tracks"	;	
+	private static final int DATABASE_VERSION = 1;
+	private SQLiteDatabase sqlDB;
+
+	
+	public static final Uri TrackTABLE_URI = Uri.parse("content://" + AUTH + "/" + PATH);
+	public static final UriMatcher uriMatcher;
+	public static final String _ID = "_id";
+	MatrixCursor mCursor = new MatrixCursor(new String[] {"_id","topTrack"});
+	Context _context;
+	
+	static {
+		uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+		uriMatcher.addURI(AUTH, "", 1);  
+		uriMatcher.addURI(AUTH, "*", 2);
+	}
+	
+
+	
+
+	@Override
+	public int delete(Uri uri, String selection, String[] selectionArgs) {
+		// Implement this to handle requests to delete one or more rows.
+		return 0;
+	}
+
+	@Override
+	public String getType(Uri uri) {
+		switch (uriMatcher.match(uri)){
+        //---get all terms---
+        case 2:  // ALL
+           return "vnd.android.cursor.dir/vnd.com.dannis.toptrackapp.MyContentProvider";
+        //---get a particular term---
+        case 1:                
+           return "vnd.android.cursor.item/vnd.com.dannis.toptrackapp.MyContentProvide";
+        default:  // ONE
+           throw new IllegalArgumentException("Unsupported URI: " + uri); 
+	}
+
+	@Override
+	public Uri insert(Uri uri, ContentValues values) {
+		sqlDB = dbHelper.getWritableDatabase();
+		long rowId = sqlDB.insert(DATABASE_TABLE,"",values);
+		if(rowId>0){
+			//Uri rowUri = ContentUris.appendId(MyUser.User.ZIPTABLE_URI.buildUpon, id)
+		}
+		return uri;
+	}	
+
+	
+	@Override
+	public boolean onCreate() {
+		_context = getContext();
+		Log.i("ContentProvider", "Power UP");
+		return true;
+	}
+
+	@Override
+	public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+		db.open();
+		Cursor c = db.getAllRecords();
+		db.close();		
+		return c;
+	}
+
+	@Override
+	public int update(Uri uri, ContentValues values, String selection,
+			String[] selectionArgs) {
+		// TODO: Implement this to handle requests to update one or more rows.
+		return 0;
+	}
+}

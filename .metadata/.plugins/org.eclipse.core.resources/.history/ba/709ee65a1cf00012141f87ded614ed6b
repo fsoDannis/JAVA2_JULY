@@ -50,17 +50,10 @@ public class MyContentProvider extends ContentProvider {
 
   	  @Override
   	  public String getType(Uri uri) {
-  		  switch (uriMatcher.match(uri)){
-      //---get all terms---
-      case 2:  // ALL
-         return "vnd.android.cursor.item/vnd.dannis.toptrackapp.MyContentProvider";
-      //---get a particular term---
-      case 1:                
-         return "vnd.android.cursor.item/vnd.dannis.toptrackapp.MyContentProvider";
-      default:  // ONE
-         throw new IllegalArgumentException("Unsupported URI: " + uri); 
-		}
-	}
+  	    String ret = getContext().getContentResolver().getType(System.CONTENT_URI);
+  	    Log.d(TAG, "getType returning: " + ret);
+  	    return ret;
+  	  }
 
   	  @Override
   	  public Uri insert(Uri uri, ContentValues values) {
