@@ -1,6 +1,5 @@
 INDEX VERSION 1.126+/Users/Dannis/Documents/JAVA2_JULY/.metadata/.plugins/org.eclipse.jdt.core
 441194280.index
-1555874315.index
 1315837528.index
 3227993645.index
 2015645056.index

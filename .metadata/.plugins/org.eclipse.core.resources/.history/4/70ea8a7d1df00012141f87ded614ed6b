@@ -4,7 +4,6 @@ import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
-import android.database.MatrixCursor;
 import android.net.Uri;
 import android.util.Log;
 import android.provider.BaseColumns;
@@ -53,10 +52,10 @@ public class MyContentProvider extends ContentProvider {
   	  public String getType(Uri uri) {
   		  switch (uriMatcher.match(uri)){
       //---get all terms---
-      case ITEMS:
+      case ITEMS;
       return topTrackData.CONTENT_TYPE;
     
-      case ITEMS_ID:
+      case ITEMS_ID;
       return topTrackData.CONTENT_ITEM_TYPE;
          
 		}
@@ -86,16 +85,13 @@ public class MyContentProvider extends ContentProvider {
   	  public Cursor query(Uri uri, String[] projection, String selection,
   	      String[] selectionArgs, String sortOrder) {
   		  
-  		  MatrixCursor result = new MatrixCursor(topTrackData.PROJECTION);
-  		  //LOST ME HERE! 
-  	//	  String JSONString = TrackData.readStringFile(getContext(),something.FILE_NAME);
   		  switch (uriMatcher.match(uri)){
   	      //---get all terms---
-  	      case ITEMS:
-  	//      return topTrackData.CONTENT_TYPE;
+  	      case ITEMS;
+  	      return topTrackData.CONTENT_TYPE;
   	    
-  	      case ITEMS_ID:
-  	 //     return topTrackData.CONTENT_ITEM_TYPE;
+  	      case ITEMS_ID;
+  	      return topTrackData.CONTENT_ITEM_TYPE;
   	         
   			}
   		  return null;

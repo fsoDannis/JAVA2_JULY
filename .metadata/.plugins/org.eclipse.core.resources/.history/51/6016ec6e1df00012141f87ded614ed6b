@@ -4,7 +4,6 @@ import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
-import android.database.MatrixCursor;
 import android.net.Uri;
 import android.util.Log;
 import android.provider.BaseColumns;
@@ -18,8 +17,8 @@ public class MyContentProvider extends ContentProvider {
 	
 	public static class topTrackData implements BaseColumns{
 		public static final Uri CONTENT_URI = Uri.parse(AUTHORITY +"/items");
-	  	static final String CONTENT_TYPE = "vnd.android.cursor.item/vnd.dannis.toptrackapp.MyContentProvider.item";
-	  	static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.dir/vnd.dannis.toptrackapp.MyContentProvider.item";
+	  	static final String SINGLE_RECORD_MIME_TYPE = "vnd.android.cursor.item/vnd.dannis.toptrackapp.MyContentProvider";
+	  	static final String MULTIPLE_RECORDS_MIME_TYPE = "vnd.android.cursor.dir/vnd.dannis.toptrackapp.MyContentProvider";
 	  	
 	  	//Define Columns
 	  	public static final String NAME_COLUMN = "name";
@@ -53,14 +52,14 @@ public class MyContentProvider extends ContentProvider {
   	  public String getType(Uri uri) {
   		  switch (uriMatcher.match(uri)){
       //---get all terms---
-      case ITEMS:
-      return topTrackData.CONTENT_TYPE;
-    
-      case ITEMS_ID:
-      return topTrackData.CONTENT_ITEM_TYPE;
-         
+      case 2:  // ALL
+         return "vnd.android.cursor.item/vnd.dannis.toptrackapp.MyContentProvider";
+      //---get a particular term---
+      case 1:                
+         return "vnd.android.cursor.item/vnd.dannis.toptrackapp.MyContentProvider";
+      default:  // ONE
+         throw new IllegalArgumentException("Unsupported URI: " + uri); 
 		}
-  		  return null;
 	}
 
   	  @Override
@@ -85,20 +84,8 @@ public class MyContentProvider extends ContentProvider {
   	  @Override
   	  public Cursor query(Uri uri, String[] projection, String selection,
   	      String[] selectionArgs, String sortOrder) {
-  		  
-  		  MatrixCursor result = new MatrixCursor(topTrackData.PROJECTION);
-  		  //LOST ME HERE! 
-  	//	  String JSONString = TrackData.readStringFile(getContext(),something.FILE_NAME);
-  		  switch (uriMatcher.match(uri)){
-  	      //---get all terms---
-  	      case ITEMS:
-  	//      return topTrackData.CONTENT_TYPE;
-  	    
-  	      case ITEMS_ID:
-  	 //     return topTrackData.CONTENT_ITEM_TYPE;
-  	         
-  			}
-  		  return null;
+  	    Log.d(TAG, "query with uri: " + uri.toString());
+  	    return null;
   	  }
 
   	}

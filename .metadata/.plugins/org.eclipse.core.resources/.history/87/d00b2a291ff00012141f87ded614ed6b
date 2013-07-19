@@ -22,10 +22,6 @@ public class TopTrackServiceReciever extends BroadcastReceiver {
 		if(context instanceof TopTrackListActivity)
 		{
 			Log.d("TopTrack",data);
-			//Query data from content provider
-			//Build list view from query data
-			//Build list adapter
-			//(TopTrackListActivity)context).
 		}
 		//throw new UnsupportedOperationException("Not yet implemented");
 	}

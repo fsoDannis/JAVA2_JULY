@@ -88,14 +88,14 @@ public class MyContentProvider extends ContentProvider {
   		  
   		  MatrixCursor result = new MatrixCursor(topTrackData.PROJECTION);
   		  //LOST ME HERE! 
-  	//	  String JSONString = TrackData.readStringFile(getContext(),something.FILE_NAME);
+  		  String JSONString = TrackData.readStringFile(getContext(),something.FILE_NAME);
   		  switch (uriMatcher.match(uri)){
   	      //---get all terms---
   	      case ITEMS:
-  	//      return topTrackData.CONTENT_TYPE;
+  	      return topTrackData.CONTENT_TYPE;
   	    
   	      case ITEMS_ID:
-  	 //     return topTrackData.CONTENT_ITEM_TYPE;
+  	      return topTrackData.CONTENT_ITEM_TYPE;
   	         
   			}
   		  return null;
