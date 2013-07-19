@@ -52,15 +52,15 @@ public class TopTrackListActivity extends Activity {
 			public void onClick(View v) {
 				
 				inMgr.hideSoftInputFromWindow(tracksButton.getWindowToken(), 0);
-		        LastFMWebAPITask lfmTask = new LastFMWebAPITask(TopTrackListActivity.this);
+		       // LastFMWebAPITask lfmTask = new LastFMWebAPITask(TopTrackListActivity.this);
 		        try {
 		        	TextView txtView  =  (TextView)metroSpinner.getSelectedView();
 		        	String metroTxt = txtView.getText().toString();
-		            lfmTask.execute(metroTxt);
+		     //       lfmTask.execute(metroTxt);
 		        }
 		        catch (Exception e)
 		        {
-		            lfmTask.cancel(true);
+		    //        lfmTask.cancel(true);
 		            alert (getResources().getString(R.string.no_tracks));
 		        }
 		        
