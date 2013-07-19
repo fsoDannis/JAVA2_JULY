@@ -84,7 +84,8 @@ public class MyContentProvider extends ContentProvider {
 
   	  @Override
   	  public Cursor query(Uri uri, String[] projection, String selection,
-  	      String[] selectionArgs, String sortOrder) {	  
+  	      String[] selectionArgs, String sortOrder) {
+  	 A	  
   		  MatrixCursor result = new MatrixCursor(topTrackData.PROJECTION);
   		  //LOST ME HERE! 
   	//	  String JSONString = TrackData.readStringFile(getContext(),something.FILE_NAME);
