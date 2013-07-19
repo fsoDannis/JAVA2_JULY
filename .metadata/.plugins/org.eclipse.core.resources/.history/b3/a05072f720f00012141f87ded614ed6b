@@ -25,7 +25,8 @@ public static  String metro = "";
 	   */
 	  @Override
 	  protected void onHandleIntent(Intent intent) {
-	      // Normally we would do some work here, like download a file
+	      // Normally we would do some work here, like download a file.
+	      // For our sample, we just sleep for 5 seconds.
 	     Bundle extras = intent.getExtras();
 	     metro = extras.getString("metroName");
 	     

@@ -22,7 +22,6 @@ public class TopTrackServiceReciever extends BroadcastReceiver {
 		if(context instanceof TopTrackListActivity)
 		{
 			Log.d("TopTrack",data);
-			//THESE THINGS I KNOW I NEED TO DO.... JUST NOT SURE HOW. 
 			//Query data from content provider
 			//Build list view from query data
 			//Build list adapter
