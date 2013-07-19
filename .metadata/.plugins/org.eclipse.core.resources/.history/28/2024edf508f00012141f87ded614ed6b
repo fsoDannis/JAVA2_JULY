@@ -13,7 +13,7 @@ public static  String metro = "";
 	   * constructor with a name for the worker thread.
 	   */
 	  public TopTrackService() {
-	      super("TopTrackService");
+	      super("HelloIntentService");
 	  }
 
 	  /**
@@ -32,11 +32,7 @@ public static  String metro = "";
 	          synchronized (this) {
 	              try {
 	            	  String result = LastFMHelper.downloadFromServer(metro);
-	                   Intent broadCast = new Intent();
-	                   broadCast.putExtra("data", result);
-	            	   broadCast.setAction("toptrackaction");
-	            	   broadCast.addCategory(Intent.CATEGORY_DEFAULT);
-	            	   sendBroadcast(broadCast);
+	                 
 	              } catch (Exception e) {
 	              }
 	          }

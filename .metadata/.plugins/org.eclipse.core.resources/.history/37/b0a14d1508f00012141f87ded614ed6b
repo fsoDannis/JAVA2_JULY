@@ -6,7 +6,6 @@ import org.json.JSONArray;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,9 +20,7 @@ import com.dannis.toptrackapp.R;
 import com.dannis.toptrackapp.TrackDataAdapter;
 import com.dannis.toptrackapp.TrackData;
 import com.dannis.toptrackapp.LastFMIconTask;
-//import com.dannis.toptrackapp.LastFMWebAPITask;
-import com.dannis.toptrackapp.TopTrackService;
-
+import com.dannis.toptrackapp.LastFMWebAPITask;
 
 public class TopTrackListActivity extends Activity {
 	
@@ -57,11 +54,8 @@ public class TopTrackListActivity extends Activity {
 				inMgr.hideSoftInputFromWindow(tracksButton.getWindowToken(), 0);
 		       // LastFMWebAPITask lfmTask = new LastFMWebAPITask(TopTrackListActivity.this);
 		        try {
-		        			        	
 		        	TextView txtView  =  (TextView)metroSpinner.getSelectedView();
 		        	String metroTxt = txtView.getText().toString();
-		        	startTopTrackService(metroTxt);
-
 		     //       lfmTask.execute(metroTxt);
 		        }
 		        catch (Exception e)
@@ -74,9 +68,7 @@ public class TopTrackListActivity extends Activity {
 			}
 		});  
         
-       
-        
-/*
+
         // Restore any already fetched data on orientation change. 
         final Object[] data = (Object[]) getLastNonConfigurationInstance();
         if(data != null) {
@@ -84,14 +76,7 @@ public class TopTrackListActivity extends Activity {
         	this.imgFetcher = (LastFMIconTask)data[1];
          	trackList.setAdapter(new TrackDataAdapter(this,this.imgFetcher,this.layoutInflator, this.tracks));
         }
-        */	
-    }
-    
-    private void startTopTrackService(String metroName)
-    {
-    	Intent serviceIntent = new Intent(this,TopTrackService.class);
-    	serviceIntent.putExtra("metro", metroName);
-    	startService(serviceIntent);
+        	
     }
     
 
